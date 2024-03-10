@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tower of Hanoi</title>
+<style>
+
+    body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>Tower of Hanoi</h1>
+<div id="output"></div>
+
+<script>
+
+function hanoi(n, from, to, aux) {
+     if (n === 1) {
+	document.getElementById('output').innerHTML += `Move disk 1 from ${from} to ${to}<br>`;
+	return;
+      }
+
+      hanoi(n - 1, from, aux, to);
+      document.getElementById('output').innerHTML += `Move disk ${n} from ${from} to ${to}<br>`;
+      hanoi(n - 1, aux, to, from);
+}
+
+
+ hanoi(7, 'A', 'C', 'B');
+</script>
+</body>
+</html>
