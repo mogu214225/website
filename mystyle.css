@@ -1,0 +1,54 @@
+<form action="https://edqaa.com/t/Echo" enctype="application/x-www-form-urlencoded" id="f1" method="post" name="f1" target="_blank">
+	<h1 style="text-align: center;">
+		Resume of Zhiling Wang</h1>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<table align="center" border="1" cellpadding="4" cellspacing="4" style="width:500px;">
+		<caption>
+			Application form</caption>
+		<tbody>
+			<tr>
+				<td>
+					Student id</td>
+				<td>
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name</td>
+				<td>
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					First Name</td>
+				<td>
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					Age</td>
+				<td>
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					Major</td>
+				<td>
+					<input name="Math" type="radio" />CIS&nbsp;<input checked="checked" name="Math" type="radio" />Math</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input name="Submit" type="submit" value="Submit" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		&nbsp;</p>
+</form>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
