@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>汉诺塔游戏</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .cls1 {
+                color: purple;
+            }
+            .layer {
+                position: absolute;
+                background-color: transparent;
+                border-radius: 5px;
+            }
+            .tower {
+                display: inline-block;
+                vertical-align: bottom;
+                margin: 10px;
+                position: relative;
+            }
+            .disk {
+                position: absolute;
+                cursor: move;
+            }
+            #game-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 80vh;
+            }
+            #options-container {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        </style>
+        <style id="dynamic"></style>
+    </head>
+    <body>
+        <div id="options-container">
+            <label for="numdisks">选择盘子数量:</label>
+            <select id="numdisks">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="period">选择时间间隔(秒):</label>
+            <select id="period">
+                <option value="0.5">0.5</option>
+                <option value="1.0">1.0</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+                <option value="2.5">2.5</option>
+            </select>
+                    <br>
+        <button id="startbtn">开始游戏</button>
+        <button id="resetbtn">重置游戏</button>
+    </div>
+
+    <div id="game-container">
+        <div id="towers"></div>
+        <div id="poles"></div>
+    </div>
+    
+    <script src="js/hanoi.js"></script>  
+    <script src="js/drag.js"></script>
+
+    
+</body>
+
+    
+</html>
